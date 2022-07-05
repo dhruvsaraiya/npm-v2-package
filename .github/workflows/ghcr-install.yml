@@ -1,0 +1,14 @@
+name: Install container from GHCR
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v3
+      - name: login to ghcr
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
+      - name: install image
+        run: docker pull ghcr.io/github/super-linter:latest
+
