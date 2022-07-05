@@ -15,6 +15,6 @@ jobs:
       # - run: npm install -ddd @github/combobox-nav
       #   env:
       #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm install -ddd @dhruv-gh-test-org-1/npm-test-package-2
+      - run: npm install -ddd @dhruv-gh-test-org-1/npm-test-package-2 --registry=https://npm.pkg.github.com
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
