@@ -16,7 +16,7 @@ jobs:
       #   env:
       #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: |
-          npm whoami -ddd --registry=https://npm.pkg.github.com
+          npm whoami -ddd --registry https://npm-lab.pkg.github.com
       #   npm install -ddd @dhruv-gh-test-org-1/npm-test-package-6 --registry=https://npm.pkg.github.com
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
